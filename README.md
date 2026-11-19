@@ -2,8 +2,9 @@
 
 ## Integrantes del equipo
 
-- _(nombre del integrante 1)_
-- _(nombre del integrante 2)_
+Manuel de Jesus Flores de la Cruz
+Sebastian Emiliano Anzueto Escobar
+Cesar Francisco Salazar Sanchez
 
 ## Materia
 
