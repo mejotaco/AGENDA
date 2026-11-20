@@ -289,3 +289,152 @@ body {
     font-size: 0.85rem;
     color: #57606a;
 }
+
+.menu a.activo {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 4px 8px;
+    text-decoration: underline;
+}
+
+.session-panel {
+    background: #0d4fae;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.session-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 8px 18px;
+    font-size: 0.9rem;
+}
+
+.session-grid-local {
+    margin: 10px 0;
+    color: #24292f;
+}
+
+.session-label {
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.code {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.9em;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 5px;
+    padding: 1px 5px;
+    color: #0550ae;
+}
+
+.badge {
+    display: inline-block;
+    background: #ddf4ff;
+    border: 1px solid #b6e3ff;
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0550ae;
+}
+
+.badge-activo {
+    background: #dafbe1;
+    border-color: #aceebb;
+    color: #116329;
+}
+
+.badge-inactivo {
+    background: #ffebe9;
+    border-color: #ffcecb;
+    color: #a40e26;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e6ebf1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.15rem;
+    margin: 16px 0 10px;
+}
+
+.card p + p,
+.card p + table,
+.card table + p,
+.card ul + p {
+    margin-top: 12px;
+}
+
+.type {
+    display: inline-block;
+    background: #f3e8ff;
+    border: 1px solid #e2d0ff;
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6639ba;
+}
+
+.value {
+    font-weight: 700;
+    color: #0a3069;
+}
+
+.topic-list {
+    margin: 10px 0 0 20px;
+}
+
+.topic-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.btn-destacado {
+    background: #0a3069;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 640px) {
+    .navbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 6px 12px 6px 0;
+    }
+
+    .session-grid,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+}
